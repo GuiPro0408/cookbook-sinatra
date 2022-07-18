@@ -1,0 +1,12 @@
+<h1>Welcome to Cookbook Recipes</h1>
+<ul>
+  <% @recipes.each_with_index do |recipe, index| %>
+    <li>
+        <%= recipe.name %> <%= recipe.done %><a href="http://localhost:4567/recipes/<%=index%>">Delete</a> <a href="http://localhost:4567/mark/<%=index%>">Mark as done</a>
+    </li>
+  <% end %>
+</ul>
+
+<a href="http://localhost:4567/new">Create</a>
+
+<a href="http://localhost:4567/scraper">Scrape Top 5</a>

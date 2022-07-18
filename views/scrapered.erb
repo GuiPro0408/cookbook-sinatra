@@ -1,0 +1,9 @@
+<h1>Scrapered Recipes</h1>
+
+<ol>
+  <% @scrapered_recipes.each_with_index do |recipe, index| %>
+    <li>
+        <%= recipe.name %>
+    </li>
+  <% end %>
+</ol>
